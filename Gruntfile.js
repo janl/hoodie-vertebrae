@@ -8,8 +8,8 @@ module.exports = function(grunt) {
     jshint: {
       files: [
         'Gruntfile.js',
-        'tests/app/**/*.js',
-        'app/**/*.js'
+        'www/tests/app/**/*.js',
+        'www/app/**/*.js'
       ],
       options: {
         jshintrc: '.jshintrc'
@@ -24,8 +24,8 @@ module.exports = function(grunt) {
     copy: {
       dist: {
         files: {
-          'prod/app/index.html': 'app/index.html',
-          'prod/assets/css/app/': 'assets/css/**'
+          'www/prod/app/index.html': 'www/app/index.html',
+          'www/prod/assets/css/app/': 'www/assets/css/**'
         }
       }
     },
@@ -45,12 +45,12 @@ module.exports = function(grunt) {
         options: {
           almond: true,
           replaceRequireScript: [{
-            files: ['prod/app/index.html'],
+            files: ['www/prod/app/index.html'],
             module: 'main',
-            modulePath: 'app/main'
+            modulePath: 'www/app/main'
           }],
           insertRequire: ['main'],
-          baseUrl: "app/",
+          baseUrl: "www/app/",
           optimizeCss: "none",
           optimize: "uglify",
           uglify: {
@@ -64,14 +64,14 @@ module.exports = function(grunt) {
           optimizeAllPluginResources: true,
           paths: {
             app:           '.',
-            text:          '../lib/require-text/text',
-            hbs:           '../lib/backbone.marionette.hbs/backbone.marionette.hbs',
-            jquery:        '../lib/jquery/jquery',
-            handlebars:    '../lib/handlebars/handlebars',
-            lodash:        '../lib/lodash/lodash',
-            backbone:      '../lib/backbone/backbone',
-            marionette:    '../lib/backbone.marionette/lib/backbone.marionette',
-            hoodie:        '../lib/hoodie/dist/hoodie.min'
+            text:          'www/lib/require-text/text',
+            hbs:           'www/lib/backbone.marionette.hbs/backbone.marionette.hbs',
+            jquery:        'www/lib/jquery/jquery',
+            handlebars:    'www/lib/handlebars/handlebars',
+            lodash:        'www/lib/lodash/lodash',
+            backbone:      'www/lib/backbone/backbone',
+            marionette:    'www/lib/backbone.marionette/lib/backbone.marionette',
+            hoodie:        'www/lib/hoodie/dist/hoodie.min'
           },
           shim: {
             'backbone': {
@@ -88,7 +88,7 @@ module.exports = function(grunt) {
               exports: 'Handlebars'
             }
           },
-          out: "prod/app/main.js",
+          out: "www/prod/app/main.js",
           name: "main"
         }
       }

@@ -15,33 +15,33 @@ files = [
 
   // put all components in requirejs 'paths' config here (included: false)
   //{ pattern: 'lib/**/*.js', watched: false, included: false},
-  { pattern: 'app/**/*.js', watched: true, included: false},
+  { pattern: 'www/app/**/*.js', watched: true, included: false},
 
   // all src and test modules (included: false)
-  { pattern: 'tests/app/collections/*.js', watched: true, included: false },
-  { pattern: 'tests/app/models/*.js', watched: true, included: false },
-  { pattern: 'tests/app/views/*.js', watched: true, included: false },
+  { pattern: 'www/tests/app/collections/*.js', watched: true, included: false },
+  { pattern: 'www/tests/app/models/*.js', watched: true, included: false },
+  { pattern: 'www/tests/app/views/*.js', watched: true, included: false },
 
   // libs required for test framework
-  { pattern: 'tests/lib/sinon.js', watched: false, included: true },
-  { pattern: 'lib/expect/expect.js', watched: false, included: true},
+  { pattern: 'www/tests/lib/sinon.js', watched: false, included: true },
+  { pattern: 'www/lib/expect/expect.js', watched: false, included: true},
 
   // app config require module last
-  { pattern: 'lib/requirejs-text/text.js', watched: false, included: false},
-  { pattern: 'lib/jquery/jquery.js', watched: false, included: false},
-  { pattern: 'lib/lodash/lodash.js', watched: false, included: false},
-  { pattern: 'lib/backbone/backbone.js', watched: false, included: false},
-  { pattern: 'lib/backbone.marionette/lib/backbone.marionette.js', watched: false, included: false},
-  { pattern: 'lib/handlebars/handlebars.js', watched: false, included: false},
-  { pattern: 'lib/backbone.marionette.hbs/backbone.marionette.hbs.js', watched: false, included: false},
+  { pattern: 'www/lib/requirejs-text/text.js', watched: false, included: false},
+  { pattern: 'www/lib/jquery/jquery.js', watched: false, included: false},
+  { pattern: 'www/lib/lodash/lodash.js', watched: false, included: false},
+  { pattern: 'www/lib/backbone/backbone.js', watched: false, included: false},
+  { pattern: 'www/lib/backbone.marionette/lib/backbone.marionette.js', watched: false, included: false},
+  { pattern: 'www/lib/handlebars/handlebars.js', watched: false, included: false},
+  { pattern: 'www/lib/backbone.marionette.hbs/backbone.marionette.hbs.js', watched: false, included: false},
 
-  'tests/app/config.js'
+  'www/tests/app/config.js'
 ];
 
 
 // list of files to exclude
 exclude = [
-  'app/config.js'
+  'www/app/config.js'
 ];
 
 
