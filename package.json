@@ -12,6 +12,7 @@
     "couch.hoodie-{{hoodie_appname}}.jit.su"
   ],
   "scripts": {
-    "start": "node node_modules/hoodie-app/bin/start"
+    "start": "node node_modules/hoodie-app/bin/start",
+    "postinstall": "bower install"
   }
 }
