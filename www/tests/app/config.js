@@ -6,7 +6,7 @@ var tests = Object.keys(window.__karma__.files).filter(function (file) {
 
 
 require.config({
-  baseUrl:         '/base/app',
+  baseUrl:         '/base/www/app',
   paths: {
     jquery:        '../lib/jquery/jquery',
     text:          '../lib/requirejs-text/text',
