@@ -23,7 +23,7 @@ files = [
   { pattern: 'tests/app/views/*.js', watched: true, included: false },
 
   // libs required for test framework
-  { pattern: 'www/tests/lib/sinon.js', watched: false, included: true },
+  { pattern: 'www/lib/sinonjs/sinon.js', watched: false, included: true },
   { pattern: 'www/lib/expect/expect.js', watched: false, included: true},
 
   // app config require module last

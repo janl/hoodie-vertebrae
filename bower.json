@@ -12,6 +12,7 @@
     "backbone.marionette": "1.0.2",
     "backbone.marionette.hbs": "0.0.4",
     "expect": "~0.2.0",
-    "hoodie": "~0.2.3"
+    "hoodie": "~0.2.3",
+    "sinonjs": "~1.7.1"
   }
 }
