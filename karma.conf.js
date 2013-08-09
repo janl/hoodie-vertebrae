@@ -18,9 +18,9 @@ files = [
   { pattern: 'www/app/**/*.js', watched: true, included: false},
 
   // all src and test modules (included: false)
-  { pattern: 'www/tests/app/collections/*.js', watched: true, included: false },
-  { pattern: 'www/tests/app/models/*.js', watched: true, included: false },
-  { pattern: 'www/tests/app/views/*.js', watched: true, included: false },
+  { pattern: 'tests/app/collections/*.js', watched: true, included: false },
+  { pattern: 'tests/app/models/*.js', watched: true, included: false },
+  { pattern: 'tests/app/views/*.js', watched: true, included: false },
 
   // libs required for test framework
   { pattern: 'www/tests/lib/sinon.js', watched: false, included: true },
@@ -35,7 +35,7 @@ files = [
   { pattern: 'www/lib/handlebars/handlebars.js', watched: false, included: false},
   { pattern: 'www/lib/backbone.marionette.hbs/backbone.marionette.hbs.js', watched: false, included: false},
 
-  'www/tests/app/config.js'
+  'tests/app/config.js'
 ];
 
 
