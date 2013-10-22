@@ -1,5 +1,5 @@
 {
-  "name": "{{hoodie_appname}}",
+  "name": "hoodie_appname",
   "version": "1.0.0",
   "authors": "Sven Lito <me@svenlito.com>",
   "type": "app",
@@ -12,17 +12,29 @@
   },
   "devDependencies": {
     "grunt-contrib-copy": "~0.2.0",
-    "grunt-requirejs": "0.3.5",
-    "karma": "~0.8.6",
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-watch": "~0.4.4",
-    "grunt-shell": "~0.3.1"
+    "karma-script-launcher": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-firefox-launcher": "~0.1.0",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-requirejs": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma": "~0.10.2",
+    "grunt-requirejs": "~0.4.0",
+    "grunt-replace": "~0.5.1",
+    "grunt-lintblame": "~0.3.4",
+    "grunt-recess": "~0.4.0",
+    "grunt-karma": "~0.6.2",
+    "grunt-groc": "~0.4.0",
+    "mocha": "~1.13.0",
+    "karma-mocha": "~0.1.0"
   },
-  "subdomain": "hoodie-{{hoodie_appname}}",
+  "subdomain": "hoodie-hoodie_appname",
   "domains": [
-    "admin.hoodie-{{hoodie_appname}}.jit.su",
-    "couch.hoodie-{{hoodie_appname}}.jit.su"
+    "admin.hoodie-hoodie_appname.jit.su",
+    "couch.hoodie-hoodie_appname.jit.su"
   ],
   "scripts": {
     "start": "node node_modules/hoodie-app/bin/start",

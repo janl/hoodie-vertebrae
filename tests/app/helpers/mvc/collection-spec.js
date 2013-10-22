@@ -6,14 +6,13 @@ define([
   'helpers/mvc/collection'
 ],
 
-function(Collection) {
+function (Collection) {
 
   'use strict';
 
-  describe("Base collection", function() {
+  describe('Base collection', function () {
 
-    beforeEach(function() {
-      this.server = sinon.fakeServer.create();
+    beforeEach(function () {
       this.server.respondWith('GET', '/examples', [200, {'Content-Type': 'application-json'}, '{}']);
       this.server.respond();
       this.server.autoRespond = true;
@@ -22,11 +21,7 @@ function(Collection) {
       this.collection.url = '/examples';
     });
 
-    afterEach(function() {
-      this.server.restore();
-    });
-
-    it('should provide a new instance of controller', function() {
+    it('should provide a new instance of controller', function () {
       expect(this.collection instanceof Backbone.Collection).to.be.ok();
     });
 
@@ -38,7 +33,7 @@ function(Collection) {
       expect(this.collection).to.have.property('prev');
     });
 
-    it("should return a URI-encoded URL", function() {
+    it('should return a URI-encoded URL', function () {
       expect(this.collection.url).to.eql('/examples');
     });
 
