@@ -16,7 +16,8 @@ require.config({
     q:             '../lib/q/q',
     unique:        '../lib/backbone.uniquemodel/backbone.uniquemodel',
     localStorage:  '../lib/backbone.localStorage/backbone.localStorage',
-    cocktail:      '../lib/cocktail/Cocktail'
+    cocktail:      '../lib/cocktail/Cocktail',
+    hoodie:        '/lib/hoodie/dist/hoodie'
   },
 
   map: {
