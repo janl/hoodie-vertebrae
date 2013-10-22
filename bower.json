@@ -16,7 +16,8 @@
     "backbone.uniquemodel": "*",
     "backbone.localStorage": "https://github.com/pebblecode/Backbone.localStorage.git",
     "cocktail": "~0.4.0",
-    "hoodie": "~0.2.5"
+    "hoodie": "~0.2.5",
+    "backbone-hoodie": "~1.0.0"
   },
   "devDependencies": {
     "requirejs": "2.1.8",

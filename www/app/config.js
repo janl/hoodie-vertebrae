@@ -17,7 +17,8 @@ require.config({
     unique:        '../lib/backbone.uniquemodel/backbone.uniquemodel',
     localStorage:  '../lib/backbone.localStorage/backbone.localStorage',
     cocktail:      '../lib/cocktail/Cocktail',
-    hoodie:        '../lib/hoodie/dist/hoodie'
+    hoodie:        '../lib/hoodie/dist/hoodie',
+    hoodieBbn:     '../lib/backbone-hoodie/backbone-hoodie'
   },
 
   map: {
@@ -35,6 +36,15 @@ require.config({
     'marionette': {
       deps: ['backbone'],
       exports: 'Backbone.Marionette'
+    },
+
+    'hoodie': {
+      deps: ['jquery'],
+      exports: 'Hoodie'
+    },
+
+    'hoodieBbn': {
+      deps: ['backbone']
     },
 
     'unique': {
