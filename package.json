@@ -1,5 +1,5 @@
 {
-  "name": "hoodie_appname",
+  "name": "{{hoodie_appname}}",
   "version": "1.0.0",
   "authors": "Sven Lito <me@svenlito.com>",
   "type": "app",
@@ -31,10 +31,10 @@
     "mocha": "~1.13.0",
     "karma-mocha": "~0.1.0"
   },
-  "subdomain": "hoodie-hoodie_appname",
+  "subdomain": "hoodie-{{hoodie_appname}}",
   "domains": [
-    "admin.hoodie-hoodie_appname.jit.su",
-    "couch.hoodie-hoodie_appname.jit.su"
+    "admin.hoodie-{{hoodie_appname}}.jit.su",
+    "couch.hoodie-{{hoodie_appname}}.jit.su"
   ],
   "scripts": {
     "start": "node node_modules/hoodie-app/bin/start",
