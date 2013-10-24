@@ -11,7 +11,7 @@
     "backbone.marionette": "1.0.4",
     "backbone.marionette.hbs": "0.0.6",
     "q": "~0.9.6",
-    "jquery": "~2.0.3",
+    "jquery": "2.0.3",
     "bootstrap": "~3.0.0",
     "backbone.uniquemodel": "*",
     "backbone.localStorage": "https://github.com/pebblecode/Backbone.localStorage.git",
@@ -20,14 +20,7 @@
     "backbone-hoodie": "~1.0.0"
   },
   "devDependencies": {
-    "requirejs": "2.1.8",
     "sinonjs": "~1.7.1",
-    "requirejs-text": "2.0.10",
-    "lodash": "1.0.1",
-    "handlebars": "~1.0.0",
-    "backbone": "1.0.0",
-    "backbone.marionette": "1.0.3",
-    "backbone.marionette.hbs": "0.0.4",
     "expect": "~0.2.0"
   }
 }
