@@ -38,14 +38,6 @@ function (BaseModel) {
         }
       },
 
-      api: {
-        token: null,
-        url: null,
-        headers: {
-          'x-api-version' : '2.1'
-        }
-      },
-
       ajax: {
         contentType: 'application/json; charset=utf-8',
         dataType: 'json',
