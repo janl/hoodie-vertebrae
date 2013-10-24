@@ -1,6 +1,6 @@
 {
   "name": "{{hoodie_appname}}",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "authors": "Sven Lito <me@svenlito.com>",
   "type": "app",
   "engines": {
