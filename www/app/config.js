@@ -44,7 +44,7 @@ require.config({
     },
 
     'hoodieBbn': {
-      deps: ['backbone']
+      deps: ['backbone', 'hoodie']
     },
 
     'unique': {
