@@ -89,10 +89,8 @@ module.exports = function (grunt) {
             lodash:        '../lib/lodash/dist/lodash',
             backbone:      '../lib/backbone/backbone',
             marionette:    '../lib/backbone.marionette/lib/backbone.marionette',
-            unique:        '../lib/backbone.uniquemodel/backbone.uniquemodel',
-            localStorage:  '../lib/backbone.localStorage/backbone.localStorage',
-            q:             '../lib/q/q',
-            cocktail:      '../lib/cocktail/Cocktail'
+            cocktail:      '../lib/cocktail/Cocktail',
+            q:             '../lib/q/q'
           },
 
           shim: {
@@ -106,39 +104,14 @@ module.exports = function (grunt) {
               exports: 'Backbone.Marionette'
             },
 
-            'localStorage': {
-              deps: ['backbone'],
-              exports: 'Backbone.LocalStorage'
-            },
-
-            'uniquemodel': {
-              deps: ['backbone'],
-              exports: 'Backbone.UniqueModel'
-            },
-
             'handlebars': {
               exports: 'Handlebars'
             }
 
           },
-          deps: ['compiled/dependencies', 'compiled/templates'],
           out: 'prod/app/main.js',
           name: 'main'
         }
-      }
-    },
-
-    template_builder: {
-      options: {
-        src: 'www/app/components/**',
-        dest: 'www/app/compiled/templates.js'
-      }
-    },
-
-    dependencies_builder: {
-      options: {
-        src: 'www/app/components/**',
-        dest: 'www/app/compiled/dependencies.js'
       }
     },
 

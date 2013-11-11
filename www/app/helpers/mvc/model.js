@@ -7,14 +7,14 @@
 // with data that comes straight out of CouchDB
 
 define([
-  'backbone'
+  'humanModel'
 ],
 
-function (Backbone) {
+function (HumanModel) {
 
   'use strict';
 
-  var SuperModel = Backbone.Model.extend({
+  var SuperModel = HumanModel.extend({
     idAttribute: 'id'
   });
 

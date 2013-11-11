@@ -3,7 +3,7 @@
 //
 
 define([
-  'helpers/mvc/model'
+  'helpers/mvc/model',
 ],
 
 function (BaseModel) {
@@ -12,8 +12,12 @@ function (BaseModel) {
 
   return BaseModel.extend({
 
+    type: 'config',
+
     defaults: {
+
       app: {
+
         name: 'app',
 
         components: {

@@ -14,11 +14,9 @@ require.config({
     backbone:      '../lib/backbone/backbone',
     marionette:    '../lib/backbone.marionette/lib/backbone.marionette',
     q:             '../lib/q/q',
-    unique:        '../lib/backbone.uniquemodel/backbone.uniquemodel',
-    localStorage:  '../lib/backbone.localStorage/backbone.localStorage',
     cocktail:      '../lib/cocktail/Cocktail',
     hoodie:        '../lib/hoodie/dist/hoodie',
-    hoodieBbn:     '../lib/backbone-hoodie/backbone-hoodie'
+    hoodieBbn:     '../lib/backbone-hoodie/index'
   },
 
   map: {
@@ -28,6 +26,7 @@ require.config({
   },
 
   shim: {
+
     'backbone': {
       deps: ['lodash', 'jquery'],
       exports: 'Backbone'
@@ -36,25 +35,6 @@ require.config({
     'marionette': {
       deps: ['backbone'],
       exports: 'Backbone.Marionette'
-    },
-
-    'hoodie': {
-      deps: ['jquery'],
-      exports: 'Hoodie'
-    },
-
-    'hoodieBbn': {
-      deps: ['backbone', 'hoodie']
-    },
-
-    'unique': {
-      deps: ['backbone'],
-      exports: 'Backbone.UniqueModel'
-    },
-
-    'localStorage': {
-      deps: ['backbone'],
-      exports: 'Backbone.LocalStorage'
     },
 
     'handlebars': {
