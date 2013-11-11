@@ -1,5 +1,5 @@
 //
-// # bingo.index
+// # app.index
 //
 
 define([
@@ -14,22 +14,12 @@ function (app, Marionette, AppController) {
 
   return app.module('app', function () {
 
-    // module options
-    this.startWithParent = true;
-
-    //
-    // module lifecycle
-    //
     this.addInitializer(function (options) {
       this._controller = new AppController(options);
 
-      app.module('layout').start(options);
-
-      this.listenTo(app.vent, 'layout:ready', function () {
-        app.module('index').start(options);
-        // .....
-        // load applicaton components here
-        // .....
+      app.regions = app.rm.addRegions({
+        header: 'header',
+        section: 'section'
       });
 
     });

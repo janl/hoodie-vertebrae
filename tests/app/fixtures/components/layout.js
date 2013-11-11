@@ -4,7 +4,7 @@ define(function () {
 
   return {
     name: 'vertebrae-layout',
-    path: 'app/components/vertebrae-layout',
+    path: 'components/vertebrae-layout',
     config: {
       template: null
     }

@@ -1,5 +1,5 @@
 //
-// # components.bingo.controllers.index
+// # components.index.controllers.index
 //
 
 define([
@@ -11,10 +11,14 @@ function (app, Marionette) {
 
   'use strict';
 
-  var Controller = Marionette.Controller.extend({
+  return Marionette.Controller.extend({
 
     initialize: function (options) {
       this.options = options || {};
+
+      app.vent.on('layout:ready', function () {
+        // start showing views
+      });
     },
 
     index: function (data) {
@@ -22,8 +26,5 @@ function (app, Marionette) {
     }
 
   });
-
-  return Controller;
-
 
 });
