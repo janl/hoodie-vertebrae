@@ -8,13 +8,14 @@ define([
   './controllers/index'
 ],
 
-function (app, Marionette, AppController) {
+function (app, Marionette, Controller) {
 
   'use strict';
+
   return app.module('index', function () {
 
     this.on('route:index', function () {
-      new AppController();
+      new Controller();
     });
 
   });
