@@ -68,7 +68,7 @@ module.exports = function (grunt) {
             modulePath: 'app/main'
           }],
           insertRequire: ['main'],
-          baseUrl: 'app/',
+          baseUrl: 'www/app',
           optimizeCss: 'none',
           optimize: 'uglify',
           uglify: {
@@ -90,7 +90,9 @@ module.exports = function (grunt) {
             backbone:      '../lib/backbone/backbone',
             marionette:    '../lib/backbone.marionette/lib/backbone.marionette',
             cocktail:      '../lib/cocktail/Cocktail',
-            q:             '../lib/q/q'
+            q:             '../lib/q/q',
+            hoodie:        '../lib/hoodie/dist/hoodie',
+            hoodieBbn:     '../lib/backbone-hoodie/index'
           },
 
           shim: {
@@ -143,7 +145,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', 'lintblame');
 
   grunt.registerTask('test', ['lintblame', 'karma']);
-  grunt.registerTask('build', ['lintblame', 'karma', 'template_builder', 'dependencies_builder', 'recess', 'copy', 'requirejs', 'comment_builder']);
+  grunt.registerTask('build', ['lintblame', 'karma', 'recess', 'copy', 'requirejs', 'comment_builder']);
   grunt.registerTask('docs', 'groc');
 
 };

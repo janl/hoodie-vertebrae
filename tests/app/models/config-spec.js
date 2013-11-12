@@ -36,7 +36,7 @@ function (Config, Fixture) {
         });
 
         it('should expose n numer of properties', function () {
-          expect(_.size(this.cfgObj)).to.eql(4);
+          expect(_.size(this.cfgObj)).to.eql(3);
         });
 
         it('should expose a \'debug\' property', function () {
@@ -101,50 +101,6 @@ function (Config, Fixture) {
         });
 
       });
-
-
-      describe('api object', function () {
-
-        beforeEach(function () {
-          this.apiCfgObj = this.model.toJSON().api;
-        });
-
-        afterEach(function () {
-          delete this.apiCfgObj;
-        });
-
-        it('should expose n number of properties', function () {
-          expect(_.size(this.apiCfgObj)).to.eql(3);
-        });
-
-        it('should have a \'headers\' property', function () {
-          expect(this.apiCfgObj).to.have.property('headers');
-        });
-
-        it('should have its \'ajax.headers\' property set', function () {
-          expect(this.apiCfgObj.headers).to.eql({
-            'x-api-version': '2.1'
-          });
-        });
-
-        it('should have a \'token\' property', function () {
-          expect(this.apiCfgObj).to.have.property('token');
-        });
-
-        it('should have its \'ajax.token\' property set', function () {
-          expect(this.apiCfgObj.token).to.eql(null);
-        });
-
-        it('should have a \'url\' property', function () {
-          expect(this.apiCfgObj).to.have.property('url');
-        });
-
-        it('should have its \'ajax.url\' property set', function () {
-          expect(this.apiCfgObj.url).to.eql(null);
-        });
-
-      });
-
 
       describe('app object', function () {
 

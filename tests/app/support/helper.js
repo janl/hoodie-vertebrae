@@ -33,7 +33,6 @@ function (Marionette, fixture, Config) {
     beforeEach: (function () {
 
       beforeEach(function () {
-        var config = app.request('config');
 
         this.sandbox = sinon.sandbox.create();
         this.server = this.sandbox.useFakeServer();
@@ -47,7 +46,7 @@ function (Marionette, fixture, Config) {
         );
 
         this.server.respondWith(
-          'POST', config.api.url + 'test', [
+          'POST', '/test', [
             200,
             {'Content-Type': 'application-json'},
             JSON.stringify(fixture.POST)
