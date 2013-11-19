@@ -15,7 +15,7 @@ require.config({
     marionette:    '../lib/backbone.marionette/lib/backbone.marionette',
     q:             '../lib/q/q',
     cocktail:      '../lib/cocktail/Cocktail',
-    hoodie:        '/_api/_files/hoodie',
+    hoodie:        '../lib/hoodie/dist/hoodie',
     hoodieBbn:     '../lib/backbone-hoodie/index'
   },
 
