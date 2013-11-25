@@ -15,7 +15,7 @@
     "bootstrap": "~3.0.0",
     "cocktail": "~0.4.0",
     "hoodie": "0.4.x",
-    "backbone-hoodie": "https://raw.github.com/hoodiehq/backbone-hoodie/js/src/backbone-hoodie.js"
+    "backbone-hoodie": "https://raw.github.com/hoodiehq/backbone-hoodie/master/src/backbone-hoodie.js"
   },
   "devDependencies": {
     "sinonjs": "~1.7.1",
