@@ -1,14 +1,16 @@
 {
   "name": "{{hoodie_appname}}",
-  "version": "1.0.0",
+  "version": "1.6.0",
   "authors": "Sven Lito <me@svenlito.com>",
   "type": "app",
   "engines": {
-    "node": ">= 0.8.x"
+    "node": ">= 0.10.x"
   },
   "dependencies": {
-    "hoodie-app": "git://github.com/hoodiehq/hoodie-server.git",
-    "hoodie-worker-users": "git://github.com/hoodiehq/worker-users.git"
+    "hoodie-server": "0.9.2",
+    "hoodie-plugin-appconfig": "~0.1.0",
+    "hoodie-plugin-email": "~0.1.1",
+    "hoodie-plugin-users": "0.0.9"
   },
   "devDependencies": {
     "grunt-contrib-copy": "~0.2.0",
@@ -26,7 +28,6 @@
   ],
   "scripts": {
     "start": "node node_modules/hoodie-app/bin/start",
-    "postinstall": "bower install",
     "test": "grunt test --verbose"
   }
 }
